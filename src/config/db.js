@@ -21,15 +21,15 @@ sql.connect(config, (err) => {
     }
     else {
         console.log('Đã kết nối thành công SQL Server');
-        const request = new sql.Request();
-        request.query("Select * from User_Data", (err, result) => {
-            if (err) {
-                console.log("Lỗi truy vấn", err);
-            } else {
-                console.log("kết quả truy vấn ", result);
+        // const request = new sql.Request();
+        // request.query("Select * from User_Data", (err, result) => {
+        //     if (err) {
+        //         console.log("Lỗi truy vấn", err);
+        //     } else {
+        //         console.log("kết quả truy vấn ", result);
 
-            }
-        })
+        //     }
+        // })
     }
 })
 app.listen(3000, () => {
